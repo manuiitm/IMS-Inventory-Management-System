@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff</title>
+  <link rel="stylesheet" href="/static/css/scis.css">
+</head>
+<body>
+  <header><h2>Staff</h2></header>
+  <input type="text" id="staffSearch" placeholder="Search staff..." onkeyup="filterTable('staffSearch','staffTable')">
+  <button onclick="toggleForm('staffForm')">Add New Staff</button>
+  <form id="staffForm" class="hidden" onsubmit="return validateStaffForm()">
+    <input name="name" placeholder="Name">
+    <input name="position" placeholder="Position">
+    <input name="email" placeholder="Email">
+    <button type="submit">Save</button>
+  </form>
+  <table id="staffTable">
+    <tr><th>Name</th><th>Position</th><th>Email</th></tr>
+    <tr><td>Rahul</td><td>Sales</td><td>rahul@mail.com</td></tr>
+    <tr><td>Anjali</td><td>Warehouse</td><td>anjali@mail.com</td></tr>
+  </table>
+  <script src="/static/js/scrip.js"></script>
+</body>
+</html>

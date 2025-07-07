@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Category</title>
+  <link rel="stylesheet" href="/static/css/scis.css">
+</head>
+<body>
+  <header><h2>Category</h2></header>
+  <input type="text" id="categorySearch" placeholder="Search categories..." onkeyup="filterTable('categorySearch','categoryTable')">
+  <button onclick="toggleForm('categoryForm')">Add Category</button>
+  <form id="categoryForm" class="hidden" onsubmit="return validateCategoryForm()">
+    <input name="name" placeholder="Category Name">
+    <input name="desc" placeholder="Description">
+    <button type="submit">Save</button>
+  </form>
+  <table id="categoryTable">
+    <tr><th>Name</th><th>Description</th></tr>
+    <tr><td>Electronics</td><td>Devices like phones, laptops</td></tr>
+    <tr><td>Clothing</td><td>Wearable items</td></tr>
+  </table>
+  <script src="/static/js/scrip.js"></script>
+</body>
+</html>

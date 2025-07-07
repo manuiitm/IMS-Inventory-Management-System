@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Dashboard</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Inventory</h2>
+      <ul>
+                
+          <li><a href="/template/product.html">PRODUCTS</a></li>
+          <li><a href="/template/category.html">CATEGORIES</a></li>
+          <li><a href="/template/staff.html">STAFFS</a></li>
+          <li><a href="/template/manager.html">MANAGERS</a></li>
+          <li><a href="/template/customers.html">CUSTOMERS</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <div id="dashboard" class="section active">
+        <h1>Dashboard Overview</h1>
+        <div class="cards">
+          <div class="card">Products: 120</div>
+          <div class="card">Categories: 8</div>
+          <div class="card">Staff: 10</div>
+          <div class="card">Managers: 3</div>
+          <div class="card">Customers: 250</div>
+        </div>
+      </div>
+    </br>
+  
+    <div class="charts">
+
+      <div class="charts-card">
+        <h2 class="chart-title">Top 5 Products</h2>
+        <div id="bar-chart"></div>
+      </div>
+
+      <div class="charts-card">
+        <h2 class="chart-title">Purchase and Sales Orders</h2>
+        <div id="area-chart"></div>
+      </div>
+
+    </div>
+  </main>
+  <!-- End Main -->
+
+</div>
+
+<!-- Scripts -->
+<!-- ApexCharts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+<!-- Custom JS -->
+
+
+      </div>
+    </main>
+  </div>
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>    

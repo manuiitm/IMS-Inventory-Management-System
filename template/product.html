@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="/static/css/scis.css">
+</head>
+<body>
+  <header><h2>Products</h2></header>
+  <input type="text" id="productsSearch" placeholder="Search products..." onkeyup="filterTable('productsSearch','productsTable')">
+  <button onclick="toggleForm('productsForm')">Add Product</button>
+  <form id="productsForm" class="hidden" onsubmit="return validateProductForm()">
+    <input name="name" placeholder="Name">
+    <input name="category" placeholder="Category">
+    <input name="price" placeholder="Price">
+    <input name="qty" placeholder="Quantity">
+    <button type="submit">Save</button>
+  </form>
+  <table id="productsTable">
+    <tr><th>Name</th><th>Category</th><th>Price</th><th>Qty</th></tr>
+    <tr><td>Laptop</td><td>Electronics</td><td>₹50000</td><td>15</td></tr>
+    <tr><td>Shirt</td><td>Clothing</td><td>₹800</td><td>50</td></tr>
+  </table>
+  <script src="/static/js/scrip.js"></script>
+</body>
+</html>

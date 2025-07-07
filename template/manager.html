@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manager</title>
+  <link rel="stylesheet" href="/static/css/scis.css">
+</head>
+<body>
+  <header><h2>Manager</h2></header>
+  <input type="text" id="managerSearch" placeholder="Search managers..." onkeyup="filterTable('managerSearch','managerTable')">
+  <button onclick="toggleForm('managerForm')">Add Manager</button>
+  <form id="managerForm" class="hidden" onsubmit="return validateManagerForm()">
+    <input name="name" placeholder="Name">
+    <input name="department" placeholder="Department">
+    <input name="email" placeholder="Email">
+    <button type="submit">Save</button>
+  </form>
+  <table id="managerTable">
+    <tr><th>Name</th><th>Department</th><th>Email</th></tr>
+    <tr><td>Meena</td><td>HR</td><td>meena@mail.com</td></tr>
+    <tr><td>Amit</td><td>Finance</td><td>amit@mail.com</td></tr>
+  </table>
+  <script src="/static/js/scrip.js"></script>
+</body>
+</html>

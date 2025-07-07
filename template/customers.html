@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customers</title>
+  <link rel="stylesheet" href="/static/css/scis.css">
+</head>
+<body>
+  <header><h2>Customers</h2></header>
+  <input type="text" id="customersSearch" placeholder="Search customers..." onkeyup="filterTable('customersSearch','customersTable')">
+  <button onclick="toggleForm('customersForm')">Add Customer</button>
+  <form id="customersForm" class="hidden" onsubmit="return validateCustomerForm()">
+    <input name="name" placeholder="Name">
+    <input name="phone" placeholder="Phone">
+    <input name="email" placeholder="Email">
+    <button type="submit">Save</button>
+  </form>
+  <table id="customersTable">
+    <tr><th>Name</th><th>Phone</th><th>Email</th></tr>
+    <tr><td>Sunil</td><td>9876543210</td><td>sunil@mail.com</td></tr>
+    <tr><td>Priya</td><td>8765432109</td><td>priya@mail.com</td></tr>
+  </table>
+  <script src="/static/js/scrip.js"></script>
+</body>
+</html>
